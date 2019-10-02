@@ -364,7 +364,7 @@ body {
   margin-top: auto;
 }
 
-.features__grid-item article h4 {
+.features__grid-item article h3 {
   margin-bottom: 0.5rem;
 }
 
@@ -436,8 +436,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.foot h4 {
+.foot h3 {
   margin-left: 0.2rem;
+}
+
+.foot ul li {
+  display: inline-block;
 }
 
 .foot .section-wrapper {
