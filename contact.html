@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>LOGO App</title>
+    <title>Contact Form</title>
   </head>
   <body>
     <section class="banner"></section>
@@ -28,7 +28,11 @@
       <div class="logo">LOGO</div>
 
       <!-- Hamburger icon -->
-      <input type="checkbox" class="toggle checkbox" />
+      <input
+        type="checkbox"
+        class="toggle checkbox"
+        title="hamburger navigator checkbox"
+      />
       <span class="toggle hamburger"></span>
 
       <!-- Menu -->
@@ -53,13 +57,24 @@
             <section class="contact__grid">
               <section class="contact__grid-item contact__grid-item--1">
                 <form action="#" class="contact__form">
-                  <input type="text" name="name" placeholder="Your name" />
+                  <label for="name" class="input-label">Your Name:</label>
                   <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    aria-label="Your Name"
+                  />
+                  <label for="email" class="input-label">Email:</label>
+                  <input
+                    id="email"
                     type="email"
                     name="email"
                     placeholder="e-mail address"
                   />
+                  <label for="message" class="input-label">Email:</label>
                   <textarea
+                    id="message"
                     name="message"
                     placeholder="Type your message here..."
                   ></textarea>
@@ -68,7 +83,7 @@
               </section>
               <section class="contact__grid-item contact__grid-item--2">
                 <article>
-                  <h4>Lorem ipsum</h4>
+                  <h3>Lorem ipsum</h3>
                   <p>
                     Necessitatibus recusandae reprehenderit tempore.
                   </p>
@@ -82,12 +97,12 @@
     <!-- Footer section -->
     <footer class="foot">
       <div class="section-wrapper">
-        <h4>Follow us</h4>
+        <h3>Follow us</h3>
         <ul>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-facebook" title="Link to Facebook"></a>
+          <a href="#" class="fa fa-twitter" title="Link to Twitter"></a>
+          <a href="#" class="fa fa-google" title="Link to Google"></a>
+          <a href="#" class="fa fa-linkedin" title="Link to LinkedIn"></a>
         </ul>
         <section class="foot__bottom">
           <a href="#">Copyright &copy; All right reserved by LOGO</a>

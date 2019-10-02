@@ -73,6 +73,10 @@ body {
   height: 0;
 }
 
+.input-label {
+  height: 0;
+  visibility: hidden;
+}
 .banner {
   display: none;
   position: relative;
